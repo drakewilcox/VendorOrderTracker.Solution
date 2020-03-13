@@ -3,15 +3,15 @@
   Layout = "_Layout";
 }
 
-<h1>VENDORS</h1>
+<h3>VENDORS</h3>
 
 @if (Model.Count == 0)
 {
-  <h3>No Vendors Yet!</h3>
+  <p>No Vendors Yet!</p>
 }
 
 @foreach (Vendor vendor in Model)
 {
-  <h3> <a href='/vendors/@vendor.Id'>@vendor.Name</a></h3>
+  <h5> <a href='/vendors/@vendor.Id'>@vendor.Name</a></h5>
   <br>
 }
