@@ -12,5 +12,19 @@ namespace VendorOrderTracker.Controllers
       List<Vendor> allVendors = Vendor.GetAll();
       return View(allVendors);
     }
+
+    [HttpGet("/vendors/new")]
+    public ActionResult New()
+    {
+      return View();
+    }
+    [HttpPost("/vendors")]
+    public ActionResult Create(string name, string description, string location)
+    {
+      Vendor newVendor = new Vendor(name, description, location);
+      return RedirectToAction("Index");
+    }
+
+
   }
 }
