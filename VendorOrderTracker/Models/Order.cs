@@ -23,5 +23,21 @@ namespace VendorOrderTracker.Models
       Id = _count++;
 
     }
+
+    public static List<Order> GetAll()
+    {
+      return _instances;
+    }
+    public static Order Find(int id)
+    {
+      foreach (Order order in _instances)
+      {
+        if (order.Id == id)
+        {
+          return order;
+        }
+      }
+      return _instances[0];
+    }
   }
 }
