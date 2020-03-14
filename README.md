@@ -6,7 +6,7 @@
 
 ## Description
 
-_._
+_This project was created for Week 3 of the C# Unit at Epicodus. The purpose of the project was to create a ASP.NET Core MVC web appplication for "Pierre's Bakery." The Appication allows Pierre to track their vendors and all orders associated with that particular Vendor. When a new vendor is created, it is added to a list of Vendors. Each vendor acts as a link to a unique page that lists current orders for that particular vendor, and a link to add new orders. When the user clicks on a particular order all of the information entered by the user on both forms for that vendor and order is displayed in a final order page._
 
 ## Specifications:
 
@@ -51,18 +51,23 @@ _Clone this repository via Terminal using the following commands:_
 
 _To Run this Application, enter the following command in the Terminal:_
 
-* ``$ dotnet run``
+* ``cd Vendor Order Tracker``
+* ``dotnet restore``
+* ``dotnet build``
+* ``dotnet run`` or ``dotnet watch run``
+* as server is running go to the page ``http://localhost:5000`` in your browser to view page.
 
 _To view the source code of this application, open the folder in the Text Editor of your choice. (Example: to open via Visual Code enter the command ``code . `` in Terminal.)_
 
 ## Technologies Used
 * _Git_
 * _C#_
-* _.NET Core 2.2_
+* _ASP.NET Core MVC_
 * _dotnet script_
 * _VS Code_
 * _Bootstrap_
 * _CSS_
+* _Razor_
 
 ### License
 
