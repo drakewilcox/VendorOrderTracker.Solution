@@ -1,11 +1,19 @@
 @{
   Layout = "_Layout";
 }
-<h4>Order Details: </h4>
+<div class="jumbotron center text-center">
+  <h1 class="text-center">Order Details:</h1>
+  <p class="lead">Vendor: @Model["vendor"].Name</p>
+  <hr class="my-4">
+  <p>Title: @Model["order"].Title</p>
+  <p>Description @Model["order"].Description</p>
+  <p>Date: @Model["order"].Date</p>
+  <p>Price: $@Model["order"].Price</p>
+</div>
 
-<p>Vendor: @Model["vendor"].Name</p>
-<p>Title: @Model["order"].Title</p>
-<p>Description @Model["order"].Description</p>
-<p>Date: @Model["order"].Date</p>
-<p>Price: $@Model["order"].Price</p>
+
+
+
+
+
 

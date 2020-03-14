@@ -1,17 +1,22 @@
 @{
   Layout = "_Layout";
 }
+<div class="jumbotron center text-center">
+  <h1 class="text-center">Add A New Vendor</h1>
+  <hr class="my-4">
+  <form action="/vendors" method="post">
+    <input id="vendorName" name="vendorName" placeholder="Vendor Name" type="text">
+    <br>
+    <br>
+    <input id="vendorDescription" name="vendorDescription" placeholder="Description" type="text">
+    <br>
+    <br>
+    <input id="vendorLocation" name="vendorLocation" placeholder="Location" type="text">
+    <br>
+    <br>
+    <button class="btn btn-dark btn-lg" type="submit">ADD VENDOR</button>
+  </form>
+</div>
 
-<form action="/vendors" method="post">
-  <input id="vendorName" name="vendorName" placeholder="Vendor Name" type="text">
-  <br>
-  <br>
-  <input id="vendorDescription" name="vendorDescription" placeholder="Description" type="text">
-  <br>
-  <br>
-  <input id="vendorLocation" name="vendorLocation" placeholder="Location" type="text">
-  <br>
-  <br>
-  <button type="submit">ADD VENDOR</button>
-</form>
+
 

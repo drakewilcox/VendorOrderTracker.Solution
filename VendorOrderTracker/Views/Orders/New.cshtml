@@ -1,22 +1,26 @@
 @{
   Layout = "_Layout";
 }
-<h5>Add A New Order</h5>
-<p><strong>Vendor: </strong>@Model.Name</p>
 
-<form action="/vendors/@Model.Id/orders" method="post">
-  <input id="vendorId" name="nameId" type="hidden" value="@Model.Id">
-  <input id="orderTitle" name="orderTitle" placeholder="Order Title" type="text">
-  <br>
-  <br>
-  <input id="orderDescription" name="orderDescription" placeholder="Description" type="text">
-  <br>
-  <br>
-  <input id="orderPrice" name="orderPrice" placeholder="OrderPrice e.g. 0.00" type="text">
-  <br>
-  <br>
-  <input id="orderDate" name="orderDate" placeholder="Date of Order" type="text">
-  <br>
-  <br>
-  <button type='submit'>Add Order</button>
+<div class="jumbotron center text-center">
+  <h1 class="text-center">Add A New Order</h1>
+  <p class="lead"><strong>Vendor: </strong>@Model.Name</p>
+  <hr class="my-4">
+  <form action="/vendors/@Model.Id/orders" method="post">
+    <input id="vendorId" name="nameId" type="hidden" value="@Model.Id">
+    <input id="orderTitle" name="orderTitle" placeholder="Order Title" type="text">
+    <br>
+    <br>
+    <input id="orderDescription" name="orderDescription" placeholder="Description" type="text">
+    <br>
+    <br>
+    <input id="orderPrice" name="orderPrice" placeholder="OrderPrice e.g. 0.00" type="text">
+    <br>
+    <br>
+    <input id="orderDate" name="orderDate" placeholder="Date of Order" type="text">
+    <br>
+    <br>
+    <button class="btn btn-dark btn-lg" type='submit'>Add Order</button>
 </form>
+
+
