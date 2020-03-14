@@ -4,7 +4,7 @@
 @using VendorOrderTracker.Models; 
 
 <div class="jumbotron center">
-  <h1 class="text-center">All Current Orders for this Vendor</h1>
+  <h1 class="text-center">All Current Orders for @Model["vendor"].Name</h1>
   <p class="lead">
     @if(@Model["orders"].Count == 0)
     {
