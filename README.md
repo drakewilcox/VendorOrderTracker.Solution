@@ -12,6 +12,14 @@ _._
 
 | Specification | Example Input | Example Output |
 | :-------------|:-------------:|:-------------:|
+| Application allows user to input Vendor information and displays a list of Vendors | Form submitted with "Vendor Name", "Description", and "Location" | List of Vendors | 
+| When a user enters a new vendor, the application displays all vendors that have been inputed | Second Form submitted with Vendor Information | Vendor List: "Vendor 1" "Vendor 2" |
+| When a user clicks on the name of the vendor the application returns with a list of orders | User Clicks Vendor Name | Numbered List of Orders: |
+| When user views orders they are given the option to add new order information to that vendor | User Clicks "Add New Order" | Form with inputs for "Order Title," "Description," "Order Price," and "Date of Order." |
+| When a user adds a new Order Form, they are directed to a list of orders for the selected vendor | User Clicks "Add Order" | "All Current Orders for this Vendor: "|
+| When a user clicks on the Order Name they are directed to a to a page of order details for that particular order | User Clicks Order Name | Order Details: "Title:" "Description:" "Date:" "Price:" |
+
+
 
 
 ## Setup/Installation Requirements
